@@ -7,14 +7,14 @@ import {
   ElementRef,
   ViewChild,
   OnChanges,
-  SimpleChanges,
+  SimpleChanges
 } from '@angular/core';
 import { TodoInterface } from '../../types/todo.interface';
 import { TodosService } from '../../services/todos.service';
 
 @Component({
   selector: 'app-todos-todo',
-  templateUrl: './todo.component.html',
+  templateUrl: './todo.component.html'
 })
 export class TodoComponent implements OnInit, OnChanges {
   @Input('todo') todoProps: TodoInterface;
